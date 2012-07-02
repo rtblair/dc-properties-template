@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>DC's Changing Landscape</title>
+    <title>Nassau County Voter Turnout</title>
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/map.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -13,8 +13,8 @@
     <div id="content">
         <div id='branding'></div>
         <div id="about">
-            <h1>DC's Changing Landscape</h1>
-            <p>Over the past few years, Washington DC has been undergoing economic, social, and demographic shifts. Property values in particular have been changing rapidly as parts of the city undergo aggressive development. See how these factors are shaping DC.</p>
+            <h1>Nassau County Voter Turnout</h1>
+            <p>This map will include information about historical voter turnout by party. </p>
             <div data-control="geocode" id="search">
                 <form class="geocode">
                     <input placeholder="Search for an address" type="text">
@@ -25,7 +25,7 @@
         </div>
     </div>
     
-    <div id="projects" class="layers">
+<!--    <div id="projects" class="layers">
        <a data-control="layer" href="#building">Building Permits, 2011</a>
        <a data-control="layer" href="#construction">City Construction Projects, 2011</a>
     </div>
@@ -35,9 +35,9 @@
        <a data-control="layer" href="#theft">Theft, 2011</a>
        <a data-control="layer" href="#auto">Theft from Auto, 2011</a>
 
-    </div>
+    </div> -->
     <div id="map" class="map">
-        <div class="wax-legends">
+<!--       <div class="wax-legends">
             <div class="wax-legend" style="display: block; ">
                 <div class="scale">
                     <label><a href="http://data.dc.gov/Main_DataCatalog.aspx?id=10">% Change in property value '10-'11</a></label>
@@ -63,7 +63,8 @@
                     <label><a href="http://data.dc.gov/Main_DataCatalog.aspx?id=3">Crime incident</a></label>
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </div>
     
     <!-- External libraries and site script -->
@@ -81,16 +82,16 @@
         // Make a new map in the #map element
         var main = Map('map', {
             // Specify the MapBox API url
-            api: 'http://a.tiles.mapbox.com/v3/examples.map-20v6611k,mapbox.dc-property-values.jsonp',
+            api: 'http://a.tiles.mapbox.com/v3/rtblair.map-ret8sf0n.jsonp',
             center: {
-                lat: 38.9090033656251,      // Intial center point and zoom level.
-                lon: -77.014396158891,      // To find coordinates and zoom levels
+                lat: 40.732,      // Intial center point and zoom level.
+                lon: -73.562,      // To find coordinates and zoom levels
                 zoom: 13                    // try: http://www.getlatlon.com
             },
-            zoomRange: [0, 15],             // Limit zooming on the map to these levels
+            zoomRange: [11, 16],             // Limit zooming on the map to these levels
             features: [                     // Map features (see readme.md)
                 'zoomwheel',
-                'movetips',
+                'tooltips',
                 'zoombox',
                 'zoompan',
                 'share'

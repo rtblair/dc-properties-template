@@ -102,10 +102,10 @@ body > div {
 #branding {
 	position: absolute;
     height: 145px;
-    width: 150px;
+    width: 240px;
     left: 0;
     float: left;
-    background: url(../img/logo.png) 30px 60px no-repeat;
+    background: url(../img/logo3.png) 10px 50px no-repeat;
     }
 
 #content {
@@ -122,7 +122,7 @@ body > div {
     }
     
 #about {
-    margin-left: 150px;
+    margin-left: 250px;
     width: 689px;
     float: left;
     padding: 0 20px;
@@ -227,7 +227,7 @@ a.zoomer {
 
 .wax-tooltip {
     border:none;
-    background:none;
+    background:black;
     border-radius:none;
     -moz-border-radius:none;
     -webkit-border-radius:none;
